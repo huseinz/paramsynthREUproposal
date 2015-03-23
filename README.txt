@@ -1,1 +1,1 @@
-The content of the LaTeX file is from a proposal assignment I wrote for ENC 3241.
+The contents of enc3241_proposal.tex is just a practice LaTeX document.
