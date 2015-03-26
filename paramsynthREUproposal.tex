@@ -1,1 +1,51 @@
-%empty
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[width=14cm, height=25cm]{geometry}
+\begin{document}
+\title{\vspace{-1.0cm}REU Parameter Synthesis Proposal}
+\date{\small March 25, 2015}
+\author{\small Written by Zubir Husein with the guidance of Faraz Hussain and Dr. Sumit K. Jha
+	\\\em \small EECS Department, University of Central Florida}
+\maketitle
+
+\section*{Introduction}
+
+When creating computational models designed to simulate complex natural phenomena that contain elements of randomness, it is often the case that a stochastic model is used to describe the system of interest. 
+These models are referred to as parameterized probabilistic complex computational $(P^2C^2)$ models.
+Given a set of parameters, they produce a probability distribution of possible behaviors
+rather than a single deterministic output. Typically we desire to discover which set of parameters will produce a given behavior within a given probability. Traditionally this was done via brute force evaluation of all possible parameters. 
+For models with many parameters it becomes computationally expensive, impractical, or impossible to use such a technique.
+Thus the development of software algorithms that can intelligently discover these parameters and use of modern parallel processing techniques are of utmost importance to researchers. 
+
+\section*{Background}
+
+* background on the biological model we're using and the algorithms themselves *
+
+
+\section*{Method}
+\begin{enumerate}
+	\item Create a tool implementing the algorithm in C++ that utilizes Open MPI\footnote{http://www.open-mpi.org/} and the GNU Scientific Library\footnote{http://gnu.org/software/gsl/}.
+	\item Verify the correctness of the tool, do benchmarking.
+	\item Create an easy to use interface for the biologists who will ultimately use the tool in their research.
+	\item ...
+\end{enumerate}
+
+\section*{Schedule}
+
+todo
+
+\begin{thebibliography}{9}
+
+\bibitem{hussain_1}
+Faraz Hussain, Qi Mi, Joyeeta Dutta-Moscato, Yoram Vodovotz and Sumit K. Kha.
+A new algorithmic technique for learning parameters in computational systems biology: applications to an acute
+inflammatory response model. 2014
+\bibitem{jha_1}
+Sumit K. Jha. Exascale algorithms for synthesizing parameters of stochastic computational models from qualitative and semi-quantitative specifications. 2012
+
+
+\end{thebibliography}
+
+
+
+\end{document}
